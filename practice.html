@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MKRW — Практическая часть</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <span class="mark">MKRW</span>
+        <span class="name">каталог</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html">Главная</a>
+        <a href="theory.html">Теория</a>
+        <a href="practice.html" aria-current="page">Практика</a>
+        <a href="sources.html">Источники</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Каталог</h2>
+        <p>Витрина практической части проекта (концепт-товары)</p>
+      </div>
+
+      <div class="tabs" id="tabs">
+        <div class="tab active" data-filter="all">Все</div>
+        <div class="tab" data-filter="hoodie">Худи</div>
+        <div class="tab" data-filter="jacket">Куртки</div>
+        <div class="tab" data-filter="tee">Футболки</div>
+      </div>
+
+      <div class="products" id="products">
+
+        <!-- Hoodie -->
+        <article class="card product" data-category="hoodie">
+          <div class="thumb">ADD IMAGE (Blessed Hoodie)</div>
+          <div class="badges">
+            <span class="chip">Hoodie</span><span class="chip">Zip</span>
+          </div>
+          <div class="title">Blessed</div>
+          <p class="desc">Смысловой контраст: “blessed” + рана. Минималистичный фронт и сильная идея.</p>
+          <div class="price"><span>Статус</span><strong>концепт</strong></div>
+        </article>
+
+        <!-- Jacket -->
+        <article class="card product" data-category="jacket">
+          <div class="thumb">ADD IMAGE (Ruined Saint Jacket)</div>
+          <div class="badges">
+            <span class="chip">Jacket</span><span class="chip">Puffer</span>
+          </div>
+          <div class="title">Ruined Saint</div>
+          <p class="desc">Эффект “временем стерто”. Крест и типографика, как след на ткани.</p>
+          <div class="price"><span>Статус</span><strong>концепт</strong></div>
+        </article>
+
+        <!-- Tee -->
+        <article class="card product" data-category="tee">
+          <div class="thumb">ADD IMAGE (Exiled Saints Tee)</div>
+          <div class="badges">
+            <span class="chip">T-shirt</span><span class="chip">Back print</span>
+          </div>
+          <div class="title">Exiled Saints</div>
+          <p class="desc">Графика + манифест: “Rebuild the ruins…”. Фронт как икона, но размытая.</p>
+          <div class="price"><span>Статус</span><strong>концепт</strong></div>
+        </article>
+
+        <!-- Extra placeholders to look like a real shop -->
+        <article class="card product" data-category="hoodie">
+          <div class="thumb">PLACEHOLDER</div>
+          <div class="badges"><span class="chip">Hoodie</span><span class="chip">Drop</span></div>
+          <div class="title">MKRW Drop #1</div>
+          <p class="desc">Место под следующий дизайн/дроп. Можно добавить фото и описание.</p>
+          <div class="price"><span>Статус</span><strong>в разработке</strong></div>
+        </article>
+
+        <article class="card product" data-category="tee">
+          <div class="thumb">PLACEHOLDER</div>
+          <div class="badges"><span class="chip">T-shirt</span><span class="chip">Draft</span></div>
+          <div class="title">Draft Piece</div>
+          <p class="desc">Заглушка под будущую модель. Нужна для “полноты магазина”.</p>
+          <div class="price"><span>Статус</span><strong>в разработке</strong></div>
+        </article>
+
+        <article class="card product" data-category="jacket">
+          <div class="thumb">PLACEHOLDER</div>
+          <div class="badges"><span class="chip">Jacket</span><span class="chip">Draft</span></div>
+          <div class="title">Outerwear Concept</div>
+          <p class="desc">Заглушка под будущий дизайн. Позже заменишь на реальный айтем.</p>
+          <div class="price"><span>Статус</span><strong>в разработке</strong></div>
+        </article>
+
+      </div>
+
+      <hr class="sep">
+
+      <div class="grid">
+        <div class="card big">
+          <h3 style="margin:0 0 10px; letter-spacing:.08em; text-transform:uppercase; font-size:14px; color:rgba(243,243,243,.72);">О бренде MKRW</h3>
+          <p class="desc" style="margin:0; line-height:1.7;">
+            MKRW — бренд уличной одежды, созданный в рамках индивидуального проекта.
+            Дизайн опирается на исследование того, как визуальный стиль и символика помогают подросткам выражать
+            внутреннее состояние, принадлежность к сообществу и личные идеи.
+          </p>
+          <div class="badges" style="margin-top:12px;">
+            <span class="chip">минимализм</span><span class="chip">контраст</span><span class="chip">символы</span>
+          </div>
+        </div>
+
+        <div class="card small">
+          <h3 style="margin:0 0 10px; letter-spacing:.08em; text-transform:uppercase; font-size:14px; color:rgba(243,243,243,.72);">Социальные сети</h3>
+          <p class="desc" style="margin:0 0 12px;">Следить за развитием MKRW:</p>
+          <div class="btn-row" style="justify-content:flex-start;">
+            <a class="btn" href="https://t.me/+xLszyric-BxlNDNh" target="_blank" rel="noopener">Telegram</a>
+            <a class="btn secondary" href="https://www.instagram.com/mkrw_spb" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>Практическая часть · MKRW · 2025–2026</div>
+      <div><a href="index.html">На главную</a></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
