@@ -733,3 +733,10 @@ body::before{
     margin: 0;
   }
 }
+
+.logo-img{
+  max-width: 260px;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 10px 30px rgba(0,0,0,.6));
+}
