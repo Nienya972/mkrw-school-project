@@ -26,3 +26,17 @@ if (tabs && products) {
     filterBy(filter);
   });
 }
+
+document.querySelectorAll('.toggle-img').forEach(el => {
+  const images = el.dataset.images.split(',');
+  let index = 0;
+
+  el.style.backgroundImage = `url(${images[index]})`;
+
+  el.addEventListener('click', () => {
+    index = (index + 1) % images.length;
+    el.style.backgroundImage = `url(${images[index]})`;
+  });
+});
+
+
