@@ -747,3 +747,5 @@ body::before{
   background-repeat: no-repeat;
   cursor: pointer;
 }
+
+html{ scroll-behavior:smooth; }
