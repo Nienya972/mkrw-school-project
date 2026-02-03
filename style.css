@@ -749,3 +749,46 @@ body::before{
 }
 
 html{ scroll-behavior:smooth; }
+
+.social-card{
+  display:flex;
+  justify-content:space-between;
+  gap:16px;
+  border:1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255,255,255,.02);
+  padding: 18px;
+  box-shadow: var(--shadow);
+}
+
+.social-left .title{
+  font-size: 16px;
+  margin: 0 0 6px;
+}
+
+.social-left .desc{
+  margin: 0;
+  color: var(--muted);
+  line-height:1.6;
+  font-size: 14px;
+  max-width: 68ch;
+}
+
+.social-right{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  align-items:flex-end;
+  justify-content:center;
+  min-width: 220px;
+}
+
+@media (max-width: 560px){
+  .social-card{
+    flex-direction:column;
+  }
+  .social-right{
+    align-items:flex-start;
+    min-width:auto;
+  }
+}
