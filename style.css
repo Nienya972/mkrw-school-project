@@ -707,3 +707,29 @@ body::before{
     text-align: center;
   }
 }
+
+/* ==== MOBILE FIX: ARTICLE OVERFLOW ==== */
+@media (max-width: 560px){
+
+  body{
+    overflow-x: hidden;
+  }
+
+  .container{
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .article-grid{
+    display: block;
+    width: 100%;
+  }
+
+  .textblock,
+  .toc{
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+}
