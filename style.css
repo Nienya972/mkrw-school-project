@@ -740,3 +740,10 @@ body::before{
   height: auto;
   filter: drop-shadow(0 10px 30px rgba(0,0,0,.6));
 }
+
+.product-img{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
