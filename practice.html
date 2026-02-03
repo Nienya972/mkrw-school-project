@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MKRW — Практическая часть</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <span class="mark">MKRW</span>
+        <span class="name">каталог</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html">Главная</a>
+        <a href="theory.html">Теория</a>
+        <a href="practice.html" aria-current="page">Практика</a>
+        <a href="sources.html">Источники</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Каталог</h2>
+        <p>Витрина практической части проекта (концепт-товары)</p>
+      </div>
+
+      <div class="tabs" id="tabs">
+        <div class="tab active" data-filter="all">Все</div>
+        <div class="tab" data-filter="hoodie">Худи</div>
+        <div class="tab" data-filter="jacket">Куртки</div>
+        <div class="tab" data-filter="tee">Футболки</div>
+      </div>
+
+      <div class="products" id="products">
+
+  <!-- ITEM 1 -->
+  <article class="card product" data-category="hoodie">
+    <div class="thumb product-img toggle-img"
+         data-images="assets/img/it_1_f.png,assets/img/it_1_b.png"></div>
+
+    <div class="badges">
+      <span class="chip">Hoodie</span>
+      <span class="chip">Drop 01</span>
+    </div>
+
+    <div class="title">Item 01</div>
+    <p class="desc">
+      Дизайн как способ самовыражения: символ, контраст, внутреннее состояние.
+    </p>
+
+    <div class="price">
+      <span>Статус</span><strong>готово</strong>
+    </div>
+  </article>
+
+  <!-- ITEM 2 -->
+  <article class="card product" data-category="jacket">
+    <div class="thumb product-img toggle-img"
+         data-images="assets/img/it_2_f.png,assets/img/it_2_b.png"></div>
+
+    <div class="badges">
+      <span class="chip">Jacket</span>
+      <span class="chip">Drop 01</span>
+    </div>
+
+    <div class="title">Item 02</div>
+    <p class="desc">
+      Визуальный образ как “язык”: форма, символика, настроение, идентичность.
+    </p>
+
+    <div class="price">
+      <span>Статус</span><strong>готово</strong>
+    </div>
+  </article>
+
+  <!-- ITEM 3 -->
+  <article class="card product" data-category="tee">
+    <div class="thumb product-img toggle-img"
+         data-images="assets/img/it_3_f.png,assets/img/it_3_b.png"></div>
+
+    <div class="badges">
+      <span class="chip">T-shirt</span>
+      <span class="chip">Drop 01</span>
+    </div>
+
+    <div class="title">Item 03</div>
+    <p class="desc">
+      Графика и текст как манифест: смысл важнее тренда, стиль — часть личности.
+    </p>
+
+    <div class="price">
+      <span>Статус</span><strong>готово</strong>
+    </div>
+  </article>
+
+  <!-- CONCEPT / QUESTION 1 -->
+  <article class="card product concept" data-category="hoodie">
+    <div class="thumb product-img"
+         style="background-image:url('assets/img/quest.png')"></div>
+
+    <div class="badges">
+      <span class="chip">Hoodie</span>
+      <span class="chip">Concept</span>
+    </div>
+
+    <div class="title">MKRW Question</div>
+    <p class="desc">
+      Может ли худи быть не просто одеждой, а формой высказывания?
+    </p>
+
+    <div class="price">
+      <span>Статус</span><strong>в разработке</strong>
+    </div>
+  </article>
+
+  <!-- CONCEPT / QUESTION 2 -->
+  <article class="card product concept" data-category="tee">
+    <div class="thumb product-img"
+         style="background-image:url('assets/img/quest.png')"></div>
+
+    <div class="badges">
+      <span class="chip">T-shirt</span>
+      <span class="chip">Concept</span>
+    </div>
+
+    <div class="title">Draft Piece</div>
+    <p class="desc">
+      Где проходит граница между базовой вещью и личным смыслом?
+    </p>
+
+    <div class="price">
+      <span>Статус</span><strong>в разработке</strong>
+    </div>
+  </article>
+
+  <!-- CONCEPT / QUESTION 3 -->
+  <article class="card product concept" data-category="jacket">
+    <div class="thumb product-img"
+         style="background-image:url('assets/img/quest.png')"></div>
+
+    <div class="badges">
+      <span class="chip">Jacket</span>
+      <span class="chip">Research</span>
+    </div>
+
+    <div class="title">Outerwear Concept</div>
+    <p class="desc">
+      Может ли верхняя одежда отражать внутреннее состояние человека?
+    </p>
+
+    <div class="price">
+      <span>Статус</span><strong>в разработке</strong>
+    </div>
+  </article>
+
+</div>
+
+
+      <hr class="sep">
+
+      <div class="grid">
+        <div class="card big">
+          <h3 style="margin:0 0 10px; letter-spacing:.08em; text-transform:uppercase; font-size:14px; color:rgba(243,243,243,.72);">О бренде MKRW</h3>
+          <p class="desc" style="margin:0; line-height:1.7;">
+            MKRW — бренд уличной одежды, созданный в рамках индивидуального проекта.
+            Дизайн опирается на исследование того, как визуальный стиль и символика помогают подросткам выражать
+            внутреннее состояние, принадлежность к сообществу и личные идеи.
+          </p>
+          <div class="badges" style="margin-top:12px;">
+            <span class="chip">минимализм</span><span class="chip">контраст</span><span class="chip">символы</span>
+          </div>
+        </div>
+
+        <div class="card small">
+          <h3 style="margin:0 0 10px; letter-spacing:.08em; text-transform:uppercase; font-size:14px; color:rgba(243,243,243,.72);">Социальные сети</h3>
+          <p class="desc" style="margin:0 0 12px;">Следить за развитием MKRW:</p>
+          <div class="btn-row" style="justify-content:flex-start;">
+            <a class="btn" href="https://t.me/+xLszyric-BxlNDNh" target="_blank" rel="noopener">Telegram</a>
+            <a class="btn secondary" href="https://www.instagram.com/mkrw_spb" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>Практическая часть · MKRW · 2025–2026</div>
+      <div><a href="index.html">На главную</a></div>
+    </div>
+  </footer>
+
+  <script>
+document.querySelectorAll('.toggle-img').forEach(el => {
+  const images = el.dataset.images.split(',');
+  let index = 0;
+
+  el.style.backgroundImage = `url(${images[index]})`;
+
+  el.addEventListener('click', () => {
+    index = (index + 1) % images.length;
+    el.style.backgroundImage = `url(${images[index]})`;
+  });
+});
+</script>
+
+</body>
+</html>
+
+
